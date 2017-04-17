@@ -1,5 +1,5 @@
 {
-  "name": "@cedrus/generator-cedrus-api-lite",
+  "name": "generator-cedrus-api-lite",
   "version": "0.5.1",
   "description": "Creating NodeJS REST API's following Cedrus best practices.",
   "homepage": "https://github.com/Cedrusco/cedrus-api-lite-generator",
