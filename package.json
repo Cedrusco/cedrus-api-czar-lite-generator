@@ -1,19 +1,27 @@
 {
   "name": "generator-cedrus-api-lite",
-  "version": "1.0.0",
+  "version": "0.5.0",
   "description": "Creating NodeJS REST API's following Cedrus best practices.",
-  "homepage": "",
+  "homepage": "https://githib.com/Cedrusco/cedrus-api-lite-generator",
   "author": {
-    "name": "Emmie Salama",
-    "email": "emmie@cedrusco.com",
-    "url": ""
+    "name": "CedrusCo",
+    "email": "info@cedrusco.com",
+    "url": "cedrus.digital"
   },
+  "contributors": [
+    "Emmie Salama <emmie@cedrusco.com>",
+    "Rajesh Lagisetty <rajesh@cedrusco.com>"
+  ],
   "files": [
     "generators"
   ],
   "main": "generators/index.js",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "cedrus",
+    "api",
+    "nodejs",
+    "api czar"
   ],
   "dependencies": {
     "async": "^2.1.5",
@@ -53,7 +61,7 @@
       "mocha": true
     }
   },
-  "repository": "https://github.com/Cedrusco/cedrus-api-lite-generator-lite.git",
+  "repository": "https://github.com/Cedrusco/cedrus-api-lite-generator.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
