@@ -129,10 +129,10 @@ module.exports = yeoman.extend({
       apis.push(temp);
       this.config.set({JSONExtraction: apis});
       this.config.set({addResource: props});
-      this.composeWith('cedrus-api-lite:http-status-codes', {runningThrough: 'AddResource'});
-      this.composeWith('cedrus-api-lite:create-yaml');
+      this.composeWith('cedrus-api-czar-lite:http-status-codes', {runningThrough: 'AddResource'});
+      this.composeWith('cedrus-api-czar-lite:create-yaml');
       if (props.requireTestDataType) {
-        this.composeWith('cedrus-api-lite:fake-data', {runningThrough: 'AddResource'});
+        this.composeWith('cedrus-api-czar-lite:fake-data', {runningThrough: 'AddResource'});
       }
       done();
     }.bind(this));

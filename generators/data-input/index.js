@@ -17,15 +17,15 @@ module.exports = yeoman.extend({
     return this.prompt(prompts).then(function (props) {
       this.config.set({dataInput: props});
       if (props.dataInputType === 'JSON Input') {
-        this.composeWith('cedrus-api-lite:json-extraction');
-        this.composeWith('cedrus-api-lite:json-input');
-        this.composeWith('cedrus-api-lite:http-status-codes', {runningThrough: 'generator'});
-        this.composeWith('cedrus-api-lite:add-parameters');
-        this.composeWith('cedrus-api-lite:query-api');
-        this.composeWith('cedrus-api-lite:create-yaml');
-        this.composeWith('cedrus-api-lite:extract-schema');
-        this.composeWith('cedrus-api-lite:start-swagger-gen');
-        this.composeWith('cedrus-api-lite:fake-data', {runningThrough: 'generator'});
+        this.composeWith('cedrus-api-czar-lite:json-extraction');
+        this.composeWith('cedrus-api-czar-lite:json-input');
+        this.composeWith('cedrus-api-czar-lite:http-status-codes', {runningThrough: 'generator'});
+        this.composeWith('cedrus-api-czar-lite:add-parameters');
+        this.composeWith('cedrus-api-czar-lite:query-api');
+        this.composeWith('cedrus-api-czar-lite:create-yaml');
+        this.composeWith('cedrus-api-czar-lite:extract-schema');
+        this.composeWith('cedrus-api-czar-lite:start-swagger-gen');
+        this.composeWith('cedrus-api-czar-lite:fake-data', {runningThrough: 'generator'});
       }
     }.bind(this));
   }

@@ -36,7 +36,7 @@ module.exports = yeoman.extend({
         controllersFolder: controllersFolder
       }
     );
-    this.composeWith('cedrus-api-lite:copy-controllers');
+    this.composeWith('cedrus-api-czar-lite:copy-controllers');
     this.npmInstall();
   }
 });

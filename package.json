@@ -1,8 +1,8 @@
 {
-  "name": "generator-cedrus-api-lite",
-  "version": "0.5.1",
+  "name": "generator-cedrus-api-czar-lite",
+  "version": "0.5.2",
   "description": "Creating NodeJS REST API's following Cedrus best practices.",
-  "homepage": "https://github.com/Cedrusco/cedrus-api-lite-generator",
+  "homepage": "https://github.com/Cedrusco/cedrus-api-czar-lite-generator",
   "author": {
     "name": "CedrusCo",
     "email": "info@cedrusco.com",
@@ -15,7 +15,7 @@
   "files": [
     "generators"
   ],
-  "main": "generators/app/index.js",
+  "main": "generators/index.js",
   "keywords": [
     "yeoman-generator",
     "cedrus",
@@ -30,12 +30,14 @@
     "del": "^2.2.2",
     "generate-schema": "^2.3.1",
     "json-schema-faker": "^0.4.0",
+    "js-yaml": "^3.7.0",
     "ncp": "^2.0.0",
     "request": "^2.81.0",
     "strip-json-comments": "^2.0.1",
     "write-yaml": "^0.2.2",
     "xml2js": "^0.4.17",
     "yamljs": "^0.2.8",
+    "unzip2": "^0.2.5",
     "yeoman-generator": "^1.1.1",
     "yosay": "^1.0.0"
   },
@@ -50,9 +52,6 @@
     "gulp-mocha": "^3.0.1",
     "gulp-nsp": "^2.1.0",
     "gulp-plumber": "^1.0.0",
-    "js-yaml": "^3.7.0",
-    "request": "^2.79.0",
-    "unzip2": "^0.2.5",
     "yeoman-assert": "^2.0.0",
     "yeoman-test": "^1.0.0"
   },
@@ -62,7 +61,7 @@
       "mocha": true
     }
   },
-  "repository": "https://github.com/Cedrusco/cedrus-api-lite-generator.git",
+  "repository": "https://github.com/Cedrusco/cedrus-api-czar-lite-generator.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

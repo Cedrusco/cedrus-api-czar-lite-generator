@@ -67,6 +67,6 @@ module.exports = yeoman.extend({
     });
   },
   end: function () {
-    this.composeWith('cedrus-api-lite:http-status-codes-yaml');
+    this.composeWith('cedrus-api-czar-lite:http-status-codes-yaml');
   }
 });

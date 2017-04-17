@@ -12,7 +12,7 @@ module.exports = yeoman.extend({
     var runningThrough = this.options.runningThrough;
     var configOptions = this.config.getAll();
     if (runningThrough === 'AddResource') {
-      //createJson(configOptions.addResource.resourceName, configOptions.addResource.paginationLimit, configOptions.addResource.jsonSchema);
+      // createJson(configOptions.addResource.resourceName, configOptions.addResource.paginationLimit, configOptions.addResource.jsonSchema);
       var cb = this.async();
       addHTTPCodes(configOptions, true, cb);
     }
@@ -65,7 +65,7 @@ var addHTTPCodes = function (options, isAddResource, cb) {
             addToPaths(inputJSON, options.discover.apiProduces, options.discover.apiConsumes, apiPath.httpMethods, apiPath.resourceName, options.detail.versioning);
           }
         }
-        configFileContents['generator-cedrus-api-lite'].JSONExtraction[count].isNewResource = false;
+        configFileContents['generator-cedrus-api-czar-lite'].JSONExtraction[count].isNewResource = false;
         if(count === apiPaths.length-1){
           fs.writeFile('.yo-rc.json', JSON.stringify(configFileContents), function (err) {
             if (err) {
