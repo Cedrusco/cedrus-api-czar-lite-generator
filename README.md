@@ -16,12 +16,13 @@ Then generate your new project:
 yo cedrus-api-czar-lite
 ```
 
-## Getting To Know Yeoman
+## Deploying with IBM Bluemix
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+Once you have created your API, you can integrate and deploy to IBM BLuemix using this command
+
+```bash
+yo cedrus-api-czar-lite:deploy-manifest
+```
 
 ## License
 
