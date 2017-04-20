@@ -18,7 +18,7 @@ yo cedrus-api-czar-lite
 
 ## Deploying with IBM Bluemix
 
-Once you have created your API, you can integrate and deploy to IBM BLuemix using this command
+Once you have created your API, you can integrate and deploy to IBM Bluemix using this command
 
 ```bash
 yo cedrus-api-czar-lite:deploy-manifest

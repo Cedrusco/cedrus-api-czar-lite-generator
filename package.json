@@ -1,6 +1,6 @@
 {
   "name": "generator-cedrus-api-czar-lite",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "Creating NodeJS REST API's following Cedrus best practices.",
   "homepage": "https://github.com/Cedrusco/cedrus-api-czar-lite-generator",
   "author": {
