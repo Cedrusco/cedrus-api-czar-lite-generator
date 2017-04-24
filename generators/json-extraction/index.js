@@ -80,6 +80,7 @@ module.exports = yeoman.extend({
   prompting: function () {
     self = this;
     cb = this.async();
+    this.log('\n# Resource Extraction\n');
     var prompts = [{
       name: 'jsonType',
       message: 'Do you have a Data Object or a Data Schema?',

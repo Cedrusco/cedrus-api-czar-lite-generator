@@ -9,12 +9,7 @@ module.exports = yeoman.extend({
 
   prompting: function () {
     var done = this.async();
-    // Have Yeoman greet the user.
-    // this.log(yosay(
-    //   'Welcome to the prime ' + chalk.red('generator-soju') + ' generator!'
-    // ));
-    this.log('Welcome to ' + chalk.red('generator-cedrus-api-czar-lite') + ' v 1.0.0');
-    this.log();
+    this.log(chalk.red('# Deploy: Bluemix\n'));
 
     var prompts = [{
       type: 'input',

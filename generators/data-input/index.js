@@ -8,6 +8,7 @@ module.exports = yeoman.extend({
   },
   prompting: function () {
     // console.log('DATA INPUT', configOptions);
+    this.log('\n# Data Input\n');
     var prompts = [{
       type: 'list',
       name: 'dataInputType',
