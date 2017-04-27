@@ -1,7 +1,6 @@
 'use strict';
 var yeoman = require('yeoman-generator');
 var del = require('del');
-var controllerInfo, versioningInfo;
 
 module.exports = yeoman.extend({
   prompting: function () {
@@ -13,10 +12,11 @@ module.exports = yeoman.extend({
     var thisFunc = this;
     apiPaths.forEach(function (apiPath) {
       var controllersFolder = './controllers/';
+      var versioningInfo;
       /*
       Gather Information
       */
-      controllerInfo = {
+      var controllerInfo = {
         resourceName: capitalizeFirstLetter(apiPath.resourceName),
         httpMethods: apiPath.httpMethods,
         requireQuery: apiPath.requireQuery ? apiPath.requireQuery : null,
